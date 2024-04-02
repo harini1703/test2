@@ -36,5 +36,5 @@ if st.button('Predict'):
     prediction = predict(Maximum_Temperature, Minimum_Temperature, Dry_Bulb_Temperature, Wet_Bulb_Temperature, Dew_point_Temperature)
     interpretation = interpret_wind_speed(prediction)
     st.header('Predicted Wind Speed: ' + str(prediction) + ' km/hr')
-    st.title('Interpretation:')
-    st.title(interpretation)
+    st.header('Interpretation:'+interpretation)
+    #st.title(interpretation)
