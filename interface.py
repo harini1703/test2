@@ -3,7 +3,7 @@ pickle_in=open('windspeed1.pkl','rb')
 clf=pickle.load(pickle_in)
 
 import streamlit as st
-import sklearn as 
+import sklearn 
 import pandas as pd
 import numpy as np
 
