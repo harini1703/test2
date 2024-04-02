@@ -17,7 +17,7 @@ Dew_point_Temperature = st.sidebar.number_input("Dew point Temperature", min_val
 
 def predict(Maximum_Temperature,Minimum_Temperature,Dry_Bulb_Temperature,Wet_Bulb_Temperature,Dew_point_Temperature):
     prediction = clf.predict([[Maximum_Temperature,Minimum_Temperature,Dry_Bulb_Temperature,Wet_Bulb_Temperature,Dew_point_Temperature]])
-    return prediction[0]
+    return int(prediction[0])
 if st.button('Predict'):
     prediction = predict(Maximum_Temperature,Minimum_Temperature,Dry_Bulb_Temperature,Wet_Bulb_Temperature,Dew_point_Temperature)
     st.write('Predicted Target Value:', prediction)
