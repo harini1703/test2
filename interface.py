@@ -35,5 +35,7 @@ def interpret_wind_speed(wind_speed):
 if st.button('Predict'):
     prediction = predict(Maximum_Temperature, Minimum_Temperature, Dry_Bulb_Temperature, Wet_Bulb_Temperature, Dew_point_Temperature)
     interpretation = interpret_wind_speed(prediction)
-    st.write('Predicted Wind Speed:', str(prediction) + ' km/hr', font='Helvetica Neue, sans-serif',)
-    st.write('Interpretation:', interpretation, font='Helvetica Neue, sans-serif',)
+    st.title('Predicted Wind Speed:')
+    st.title(str(prediction) + ' km/hr')
+    st.title('Interpretation:')
+    st.title(interpretation)
