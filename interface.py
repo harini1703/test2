@@ -19,5 +19,5 @@ def predict(Maximum_Temperature,Minimum_Temperature,Dry_Bulb_Temperature,Wet_Bul
     prediction = model.predict([[Maximum_Temperature,Minimum_Temperature,Dry_Bulb_Temperature,Wet_Bulb_Temperature,Dew_point_Temperature]])
     return prediction[0]
 if st.button('Predict'):
-    prediction = predict(feature1_input, feature2_input, feature3_input)
+    prediction = predict(Maximum_Temperature,Minimum_Temperature,Dry_Bulb_Temperature,Wet_Bulb_Temperature,Dew_point_Temperature)
     st.write('Predicted Target Value:', prediction)
