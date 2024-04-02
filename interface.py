@@ -9,5 +9,5 @@ import numpy as np
 
 st.title(" WIND SPEED PREDICTION")
 st.sidebar.header('Input Parameters')
-MAXIMUM TEMPERATURE = st.sidebar.number_input("Feature Value", min_value=0, max_value=100, value=0)
+maximum  = st.sidebar.number_input("maximum", min_value=0, max_value=100, value=0)
 
