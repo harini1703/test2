@@ -15,4 +15,9 @@ Dry_Bulb_Temperature = st.sidebar.number_input("Dry Bulb Temperature", min_value
 Wet_Bulb_Temperature = st.sidebar.number_input("Wet Bulb Temperature", min_value=0, max_value=100, value=0)
 Dew_point_Temperature = st.sidebar.number_input("Dew point Temperature", min_value=0, max_value=100, value=0)
 
-
+def predict(Maximum_Temperature,Minimum_Temperature,Dry_Bulb_Temperature,Wet_Bulb_Temperature,Dew_point_Temperature):
+    prediction = model.predict([[Maximum_Temperature,Minimum_Temperature,Dry_Bulb_Temperature,Wet_Bulb_Temperature,Dew_point_Temperature]])
+    return prediction[0]
+if st.button('Predict'):
+    prediction = predict(feature1_input, feature2_input, feature3_input)
+    st.write('Predicted Target Value:', prediction)
