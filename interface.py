@@ -25,9 +25,9 @@ if nav=="Prediction":
     Wet_Bulb_Temperature = st.number_input("Wet Bulb Temperature", min_value=0, max_value=100, value=0)
     Dew_point_Temperature = st.number_input("Dew point Temperature", min_value=0, max_value=100, value=0)
     
-def predict(Maximum_Temperature,Minimum_Temperature,Dry_Bulb_Temperature,Wet_Bulb_Temperature,Dew_point_Temperature):
-    prediction = clf.predict([[Maximum_Temperature,Minimum_Temperature,Dry_Bulb_Temperature,Wet_Bulb_Temperature,Dew_point_Temperature]])
-    return int(prediction[0])
+    def predict(Maximum_Temperature,Minimum_Temperature,Dry_Bulb_Temperature,Wet_Bulb_Temperature,Dew_point_Temperature):
+        prediction = clf.predict([[Maximum_Temperature,Minimum_Temperature,Dry_Bulb_Temperature,Wet_Bulb_Temperature,Dew_point_Temperature]])
+        return int(prediction[0])
 
 def interpret_wind_speed(wind_speed):
     if wind_speed < 15:
