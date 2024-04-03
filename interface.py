@@ -9,7 +9,7 @@ import numpy as np
 
 st.header("Streamlined Wind Speed Forecasting: A Web-Based  Machine Learning Approach for Wind Mill Operators with  Real-Time data Data Using Streamlit")
 st.write("The utilization of wind energy has become increasingly prevalent in the global pursuit of sustainable and renewable energy sources. Wind mills, serving as pivotal infrastructures in this endeavor, rely heavily on accurate wind speed forecasting to optimize their operational efficiency and energy output. However, traditional forecasting methods often encounter limitations in adapting to real-time data and providing user-friendly interfaces for wind mill operators.")
-st.write("In response to these challenges, we present "Streamlined Wind Speed Forecasting," an innovative approach leveraging web-based machine learning techniques and the Streamlit framework. This approach aims to empower wind mill operators with real-time wind speed predictions, enabling them to make informed decisions and maximize energy generation.")
+st.write("In response to these challenges, we present Streamlined Wind Speed Forecasting,an innovative approach leveraging web-based machine learning techniques and the Streamlit framework. This approach aims to empower wind mill operators with real-time wind speed predictions, enabling them to make informed decisions and maximize energy generation.")
 
 st.write("By integrating machine learning models with Streamlit's interactive web application capabilities, wind speed forecasting becomes more accessible and user-friendly. Wind mill operators can conveniently access and visualize forecasted wind speeds, facilitating proactive adjustments to turbine operations and energy management strategies.")
 
