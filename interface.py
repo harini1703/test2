@@ -29,6 +29,7 @@ if nav == "Home":
     st.write("In response to these challenges, we present Streamlined Wind Speed Forecasting, an innovative approach leveraging web-based machine learning techniques and the Streamlit framework. This approach aims to empower wind mill operators with real-time wind speed predictions, enabling them to make informed decisions and maximize energy generation.")
     st.write("By integrating machine learning models with Streamlit's interactive web application capabilities, wind speed forecasting becomes more accessible and user-friendly. Wind mill operators can conveniently access and visualize forecasted wind speeds, facilitating proactive adjustments to turbine operations and energy management strategies.")
     st.write("This paper explores the development and implementation of our web-based machine learning approach, highlighting its potential to revolutionize wind speed forecasting for wind mill operators. Through a combination of advanced algorithms, real-time data integration, and user-centric design principles, we strive to enhance the efficiency and sustainability of wind energy production.")
+    st.image("download.jpeg",width=500)
 
 if nav == "Prediction":
     st.write("<h2 style='text-align: center;'>Input Parameters</h2>", unsafe_allow_html=True)
