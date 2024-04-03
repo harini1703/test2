@@ -7,7 +7,7 @@ import sklearn
 import pandas as pd
 import numpy as np
 
-st.title("Streamlined Wind Speed Forecasting: A Web-Based  Machine Learning Approach for Wind Mill Operators with  Real-Time data Data Using Streamlit")
+st.header("Streamlined Wind Speed Forecasting: A Web-Based  Machine Learning Approach for Wind Mill Operators with  Real-Time data Data Using Streamlit")
 st.sidebar.header('Input Parameters')
 Maximum_Temperature = st.sidebar.number_input("Maximum Temperature", min_value=0, max_value=100, value=0)
 Minimum_Temperature = st.sidebar.number_input("Minimum Temperature", min_value=0, max_value=100, value=0)
