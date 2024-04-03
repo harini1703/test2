@@ -14,13 +14,13 @@ st.write("In response to these challenges, we present Streamlined Wind Speed For
 st.write("By integrating machine learning models with Streamlit's interactive web application capabilities, wind speed forecasting becomes more accessible and user-friendly. Wind mill operators can conveniently access and visualize forecasted wind speeds, facilitating proactive adjustments to turbine operations and energy management strategies.")
 
 st.write("This paper explores the development and implementation of our web-based machine learning approach, highlighting its potential to revolutionize wind speed forecasting for wind mill operators. Through a combination of advanced algorithms, real-time data integration, and user-centric design principles, we strive to enhance the efficiency and sustainability of wind energy production.")
-st.sidebar.header('Input Parameters')
-Maximum_Temperature = st.sidebar.number_input("Maximum Temperature", min_value=0, max_value=100, value=0)
-Minimum_Temperature = st.sidebar.number_input("Minimum Temperature", min_value=0, max_value=100, value=0)
-Dry_Bulb_Temperature = st.sidebar.number_input("Dry Bulb Temperature", min_value=0, max_value=100, value=0)
-Wet_Bulb_Temperature = st.sidebar.number_input("Wet Bulb Temperature", min_value=0, max_value=100, value=0)
-Dew_point_Temperature = st.sidebar.number_input("Dew point Temperature", min_value=0, max_value=100, value=0)
 
+st.write("<h2 style='text-align: center;'>Input Parameters</h2>", unsafe_allow_html=True)
+Maximum_Temperature = st.number_input("Maximum Temperature", min_value=0, max_value=100, value=0)
+Minimum_Temperature = st.number_input("Minimum Temperature", min_value=0, max_value=100, value=0)
+Dry_Bulb_Temperature = st.number_input("Dry Bulb Temperature", min_value=0, max_value=100, value=0)
+Wet_Bulb_Temperature = st.number_input("Wet Bulb Temperature", min_value=0, max_value=100, value=0)
+Dew_point_Temperature = st.number_input("Dew point Temperature", min_value=0, max_value=100, value=0)
 def predict(Maximum_Temperature,Minimum_Temperature,Dry_Bulb_Temperature,Wet_Bulb_Temperature,Dew_point_Temperature):
     prediction = clf.predict([[Maximum_Temperature,Minimum_Temperature,Dry_Bulb_Temperature,Wet_Bulb_Temperature,Dew_point_Temperature]])
     return int(prediction[0])
