@@ -12,11 +12,11 @@ def predict(Maximum_Temperature, Minimum_Temperature, Dry_Bulb_Temperature, Wet_
 
 def interpret_wind_speed(wind_speed):
     if wind_speed < 15:
-        return "Wind will blow at low level and Electricity will be generated approx 225 kilowatt 
+        return "Wind will blow at low level and Electricity will be generated approx 225 kilowat "
     elif 50 <= wind_speed <= 60:
         return "Wind will generate at full capacity and Electricity will be generated approx 2 Megawatt "
     elif wind_speed > 80:
-        return "Turn off wind mill,Because of hard weather weather conditions"
+        return "Turn off wind mill, Because of hard weather conditions"
     else:
         return "Wind speed is in a normal range"
 
