@@ -33,6 +33,7 @@ if nav == "Home":
 
 if nav == "Prediction":
     st.write("<h2 style='text-align: center;'>Input Parameters</h2>", unsafe_allow_html=True)
+    date = st.date_input(label="Enter a date")
     Maximum_Temperature = st.number_input("Maximum Temperature", min_value=0, max_value=100, value=0)
     Minimum_Temperature = st.number_input("Minimum Temperature", min_value=0, max_value=100, value=0)
     Dry_Bulb_Temperature = st.number_input("Dry Bulb Temperature", min_value=0, max_value=100, value=0)
